@@ -39,7 +39,7 @@ addTest(
 addTest(
     testSuiteName.CONNECTIVITY, testCaseName.WEBSOCKETCONNECTIVITY,
     function(test) {
-      var runConnectivityTest = new RunConnectivityTest(test, Call.isWebSocket);
+      var runConnectivityTest = new RunConnectivityTest(test);
       runConnectivityTest.checkWSConnection();
     });
 
@@ -107,7 +107,6 @@ RunConnectivityTest.prototype = {
   // can be sent and received successfully
   checkWSConnection: function(config) {
     this.call = new Call(config, this.test);
-    this.call.setIceCandidateFilter(this.iceCandidateFilter);
 
     this.timeout = setTimeout(
         this.hangup.bind(this,'Websocket connection timed out'),

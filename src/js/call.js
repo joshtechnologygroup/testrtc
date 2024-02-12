@@ -210,10 +210,6 @@ Call.isHost = function(candidate) {
   return candidate.type === 'host';
 };
 
-Call.isWebSocket = function(candidate) {
-  return candidate.type === 'web socket';
-};
-
 Call.isIpv6 = function(candidate) {
   return candidate.address.indexOf(':') !== -1;
 };
