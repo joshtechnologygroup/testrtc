@@ -49,7 +49,7 @@ Due to their time duration they are not part of the normal test suite and need t
 Pull requests and issues welcome! See [CONTRIBUTING](https://github.com/GoogleChrome/webrtc/blob/master/CONTRIBUTING.md) for instructions. All contributors must sign a contributor license agreement before code can be accepted. Please complete the agreement for an [individual](https://developers.google.com/open-source/cla/individual) or a [corporation](https://developers.google.com/open-source/cla/corporate) as appropriate. The [Developer's Guide](https://bit.ly/webrtcdevguide) for this repo has more information about code style, structure and validation.
 
 ## Development ##
-Make sure to install NodeJS and NPM before continuing. Note that we have been mainly been using Posix when developing TestRTC hence developer tools might not work correctly on Windows.
+Make sure to install NodeJS and NPM before continuing and update the TURN_URL and WEBSOCKET_URL with your own URL's. Note that we have been mainly been using Posix when developing TestRTC hence developer tools might not work correctly on Windows.
 
 #### Install developer tools and frameworks ####
 ```bash
