@@ -52,7 +52,7 @@
     <paper-toolbar class="titlebar">
       <span class="title">WebRTC Troubleshooter</span>
       <paper-icon-button icon="menu" on-tap="openSettingsDialog"></paper-icon-button>
-      <paper-icon-button icon="bug-report" on-tap="openBugReport"></paper-icon-button>
+      <!-- <paper-icon-button icon="bug-report" on-tap="openBugReport"></paper-icon-button> -->
       <paper-button id="startButton" on-tap="run" raised disabled>Start</paper-button>
     </paper-toolbar>
 
@@ -78,10 +78,10 @@
         <paper-input label="URI" always-float-label placeholder="E.g.: stun:myserver.com:3478" value="{{settings.stunURI}}"></paper-input>
       </div>
 
-      <div class="section">
+      <!-- <div class="section">
         <p>For convenience here is a link with these settings:</p>
         <div class="link"><a href="[[_link]]">[[_link]]</a></div>
-      </div>
+      </div> -->
 
       <div class="buttons">
         <paper-button dialog-confirm>Continue</paper-button>
